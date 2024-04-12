@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            overflow: hidden;
+            /* Prevent scrolling */
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            /* Full viewport height */
+        }
+
+        .heading {
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+
+        .heading span {
+            color: #007bff;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .video-container {
+            flex: 1;
+            position: relative;
+            padding-bottom: 56.25%;
+            /* 16:9 Aspect Ratio */
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            width: 90vw;
+            /* 90% of viewport width */
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+        }
+
+        .content {
+            flex: 1;
+            max-width: 600px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+        }
+
+        .content h3 {
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            color: #007bff;
+        }
+
+        .content p {
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #007bff;
+            color: #fff;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="heading"><span>About</span> Us</h1>
+
+    <div class="container">
+        <section class="about" id="about">
+            <div class="row">
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/OsD506xbylY" frameborder="0"
+                        allowfullscreen></iframe>
+                </div>
+
+                <div class="content">
+                    <h3>Find the Best Deals with Us</h3>
+                    <p>
+                        At PriceCompare, we are committed to helping you find the best
+                        prices for your desired products. Whether it's electronics,
+                        clothing, or home essentials, we provide a platform for comparing
+                        prices across various stores.
+                    </p>
+                    <p>
+                        Our dedicated team ensures that you get access to the latest deals
+                        and discounts, saving you time and money. With our user-friendly
+                        interface, you can easily navigate through different categories
+                        and make informed purchasing decisions.
+                    </p>
+                    <a href="./get_quote.html" class="btn">Start Saving Now</a>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
