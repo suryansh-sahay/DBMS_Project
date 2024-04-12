@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Price Comparison</title>
+
+  <!--swiper css-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+  <!--font awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+
+  <!--css file-->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- header section starts  -->
+  <header class="header">
+    <a href="#" class="logo"><span>com</span>pariton</a>
+
+    <nav class="navbar">
+      <a href="#sign-up">sign-<span>up</span></a>
+      <a href="#home">home</a>
+      <a href="#about">about</a>
+      <a href="#price">Price Comparison</a>
+      <a href="#contact">contact</a>
+
+    </nav>
+
+    <div id="menu-bars" class="fas fa-bars"></div>
+  </header>
+
+
+  <!-- sign-up -->
+  <div class="container" id="sign-up">
+    <form action="#" class="signup-form">
+      <h2>Sign Up</h2>
+      <div class="form-group">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <button type="submit">Sign Up</button>
+    </form>
+  </div>
+
+  <!-- home section starts  -->
+  <section class="home" id="home">
+    <div class="content">
+      <h3>
+        Price
+        <span> Comparison </span>
+        Website
+      </h3>
+      <a href="#" class="btn">get quote</a>
+    </div>
+
+    <div class="swiper-container home-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="images/home1.jpg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/home2.jpg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/home3.jpg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/home4.jpg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/home5.jpg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/home6.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- about section starts  -->
+  <section class="about" id="about">
+    <h1 class="heading"><span>about</span> us</h1>
+
+    <div class="row">
+      <div class="image">
+        <img src="images/about.jpg" alt="" />
+      </div>
+
+      <div class="content">
+        <h3>Find the Best Deals with Us</h3>
+        <p>
+          At PriceCompare, we are committed to helping you find the best prices for your desired products. Whether it's
+          electronics, clothing, or home essentials, we provide a platform for comparing prices across various stores.
+        </p>
+        <p>
+          Our dedicated team ensures that you get access to the latest deals and discounts, saving you time and money.
+          With our user-friendly interface, you can easily navigate through different categories and make informed
+          purchasing decisions.
+        </p>
+        <a href="#" class="btn">Start Saving Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- price comparison section starts  -->
+  <div class="price-comparison-container" id="price">
+    <header id="header-section">
+      <h1>Electronic Product Price Comparison</h1>
+      <main id="main-section">
+        <section id="product-section">
+          <h2>Select an Electronic Product</h2>
+          <select title="select_product" id="product-select">
+            <option value="laptop">Laptop</option>
+            <option value="smartphone">Smartphone</option>
+            <option value="tablet">Tablet</option>
+            <option value="camera">Camera</option>
+            <option value="smartwatch">Smartwatch</option>
+          </select>
+        </section>
+  
+        <section id="prices-section">
+          <h2>Prices on Different Platforms</h2>
+          <div class="price-card" id="amazon">
+            <h3>Amazon</h3>
+            <img src="images/amazon-logo.png" alt="Amazon Logo">
+            <p id="amazon-price"></p>
+          </div>
+          <div class="price-card" id="flipkart">
+            <h3>Flipkart</h3>
+            <img src="images/flipkart-logo.png" alt="Flipkart Logo">
+            <p id="flipkart-price"></p>
+          </div>
+          <div class="price-card" id="ebay">
+            <h3>eBay</h3>
+            <img src="images/ebay-logo.png" alt="eBay Logo">
+            <p id="ebay-price"></p>
+          </div>
+          <div class="price-card" id="bestbuy">
+            <h3>Best Buy</h3>
+            <img src="images/bestbuy-logo.png" alt="Best Buy Logo">
+            <p id="bestbuy-price"></p>
+          </div>
+        </section>
+      </main>
+      <script src="script.js"></script>
+    </header>
+  </div>
+  
+
+    <!-- contact section starts  -->
+    <section class="contact" id="contact">
+      <h1 class="heading"><span>Contact</span>!</h1>
+
+      <form id="contact-form" action="">
+        <div class="inputBox">
+          <input type="text" placeholder="name" name="name" />
+          <input type="email" placeholder="email" name="email" />
+        </div>
+        <div class="inputBox">
+          <input type="text" placeholder="password" name="password" />
+          <input type="text" placeholder="country" name="country" />
+        </div>
+        <textarea name="message" placeholder="message" id="" cols="30" rows="10"></textarea>
+        <input type="submit" value="send message" class="btn" />
+      </form>
+    </section>
+
+
+    <!-- footer section starts  -->
+    <section class="footer">
+      <div class="box-container">
+        <!-- <div class="box">
+          <h3>branches</h3>
+          <a href="#"> <i class="fas fa-map-marker-alt"></i> bangalore </a>
+          <a href="#"> <i class="fas fa-map-marker-alt"></i> hyderabad </a>
+          <a href="#"> <i class="fas fa-map-marker-alt"></i> delhi </a>
+          <a href="#"> <i class="fas fa-map-marker-alt"></i> kolkata </a>
+          <a href="#"> <i class="fas fa-map-marker-alt"></i> chennai </a>
+        </div> -->
+
+        <div class="box">
+          <h3>quick links</h3>
+          <a href="#home"> <i class="fas fa-arrow-right"></i> home </a>
+          <a href="#"> <i class="fas fa-arrow-right"></i> service </a>
+          <a href="#price"> <i class="fas fa-arrow-right"></i> price </a>
+          <a href="#"> <i class="fas fa-arrow-right"></i> reivew </a>
+          <a href="#about"> <i class="fas fa-arrow-right"></i> about </a>
+          <a href="#contact"> <i class="fas fa-arrow-right"></i> contact </a>
+        </div>
+
+        <div class="box">
+          <h3>contact info</h3>
+          <a href="#"> <i class="fas fa-phone"></i> +91 983453223 </a>
+          <a href="#"> <i class="fas fa-phone"></i> +91 800764532 </a>
+          <a href="#"> <i class="fas fa-envelope"></i> Team@gmail.com </a>
+          <a href="#"> <i class="fas fa-envelope"></i> SEGroup@gmail.com </a>
+          <a href="#">
+            <i class="fas fa-map-marker-alt"></i> Gandhinagar, india - 360054
+          </a>
+        </div>
+
+        <div class="box">
+          <h3>follow us</h3>
+          <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+          <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+          <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+          <a href="#"> <i class="fab fa-linkedin-in"></i> linkedin </a>
+        </div>
+      </div>
+
+      <div class="credit">
+        created by <span>Team</span> | all rights reserved
+      </div>
+    </section>
+
+    <!-- theme toggler  -->
+    <div class="theme-toggler">
+      <div class="toggle-btn">
+        <i class="fas fa-cog"></i>
+      </div>
+
+      <h3>choose color</h3>
+
+      <div class="buttons">
+        <div class="theme-btn" style="background: #ccff33"></div>
+        <div class="theme-btn" style="background: #d35400"></div>
+        <div class="theme-btn" style="background: #f39c12"></div>
+        <div class="theme-btn" style="background: #1abc9c"></div>
+        <div class="theme-btn" style="background: #3498db"></div>
+        <div class="theme-btn" style="background: #9b59b6"></div>
+      </div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!--JS file-->
+    <script src="app.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const form = document.getElementById('contact-form');
+
+        form.addEventListener('submit', function (e) {
+          e.preventDefault();
+
+          const formData = new FormData(form);
+          const formDataObj = {};
+          formData.forEach((value, key) => {
+            formDataObj[key] = value;
+          });
+
+          fetch('https://script.google.com/macros/s/AKfycbzxBXfgoroDh72dvP_bbisFj_K7ZXn5VFYS3Ms8072Jdz0BQoaTLMMmDiq9u09JQt5o5A/exec', {
+            method: 'POST',
+            body: JSON.stringify(formDataObj)
+          })
+            .then(response => response.text())
+            .then(data => {
+              console.log(data); // from Google Apps Script
+              alert('Message sent successfully!');
+              form.reset();
+            })
+            .catch(error => {
+              console.error('Error:', error);
+              alert('Failed to send message. Please try again.');
+              form.reset();
+            });
+        });
+      });
+    </script>
+
+</body>
+
+</html>
