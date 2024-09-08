@@ -4,7 +4,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const flipkartPrice = document.getElementById('flipkart-price');
     const ebayPrice = document.getElementById('ebay-price');
     const bestbuyPrice = document.getElementById('bestbuy-price');
-  
     productSelect.addEventListener('change', function() {
       const selectedProduct = productSelect.value;
   

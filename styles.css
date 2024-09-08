@@ -27,6 +27,50 @@ body {
   background: #222;
 }
 
+/* sign-up start*/
+.price-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.price-card h3 {
+  margin-top: 0;
+}
+
+.price-card img {
+  width: 100px;
+  display: block;
+  margin: 0 auto;
+}
+
+.price-card p {
+  margin-top: 10px;
+}
+
+.view-button {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #007bff;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.view-button:hover {
+  background-color: #0056b3;
+}
+
+/* sign-up end */
+
+
 section {
   padding: 2rem 9%;
 }
@@ -37,7 +81,8 @@ section {
 #header-section,
 .contact,
 .footer {
-  margin-bottom: 50px; /* Adjust as needed */
+  margin-bottom: 50px;
+  /* Adjust as needed */
 }
 
 .header {
@@ -253,7 +298,7 @@ body {
   text-transform: uppercase;
 }
 
-.about > h1{
+.about>h1 {
   color: black;
 }
 
@@ -281,12 +326,12 @@ body {
 
 .about .row .content h3 {
   font-size: 3.5rem;
-  color:#111
+  color: #111
 }
 
 .about .row .content p {
   font-size: 1.5rem;
-  color:black;
+  color: black;
   padding: 1rem 0;
   line-height: 2;
 }
@@ -295,7 +340,8 @@ body {
 
 .price-comparison-container {
   margin-top: 200px;
-  margin-bottom : 200px; /* Adjust as needed */
+  margin-bottom: 200px;
+  /* Adjust as needed */
 }
 
 #header-section {
@@ -355,6 +401,7 @@ body {
   margin-top: 0.5rem;
   font-weight: bold;
 }
+
 /* price comparison section */
 
 

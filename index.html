@@ -23,7 +23,7 @@
     <a href="#" class="logo"><span>com</span>pariton</a>
 
     <nav class="navbar">
-      <a href="#sign-up">sign-<span>up</span></a>
+      <a href="./sign_up.html">sign-<span>up</span></a>
       <a href="#home">home</a>
       <a href="./aboutUs.html">about</a>
       <a href="#price">Price Comparison</a>
@@ -35,25 +35,6 @@
   </header>
 
 
-  <!-- sign-up -->
-  <div class="container" id="sign-up">
-    <form action="#" class="signup-form">
-      <h2>Sign Up</h2>
-      <div class="form-group">
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required>
-      </div>
-      <div class="form-group">
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-      </div>
-      <div class="form-group">
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required>
-      </div>
-      <button type="submit">Sign Up</button>
-    </form>
-  </div>
 
   <!-- home section starts  -->
   <section class="home" id="home">
@@ -64,7 +45,7 @@
         Website
       </h3>
       <a href="#" class="btn" onclick="openGetDealsPage()">Get Deals</a> <!-- Added onclick event -->
-      </div>
+    </div>
 
     <div class="swiper-container home-slider">
       <div class="swiper-wrapper">
@@ -137,21 +118,25 @@
             <h3>Amazon</h3>
             <img src="images/amazon-logo.png" alt="Amazon Logo">
             <p id="amazon-price"></p>
+            <button class="view-button" onclick="window.open('https://www.amazon.com')">View</button>
           </div>
           <div class="price-card" id="flipkart">
             <h3>Flipkart</h3>
             <img src="images/flipkart-logo.png" alt="Flipkart Logo">
             <p id="flipkart-price"></p>
+            <button class="view-button" onclick="window.open('https://www.flipkart.com')">View</button>
           </div>
           <div class="price-card" id="ebay">
             <h3>eBay</h3>
             <img src="images/ebay-logo.png" alt="eBay Logo">
             <p id="ebay-price"></p>
+            <button class="view-button" onclick="window.open('https://www.ebay.com')">View</button>
           </div>
           <div class="price-card" id="bestbuy">
             <h3>Best Buy</h3>
             <img src="images/bestbuy-logo.png" alt="Best Buy Logo">
             <p id="bestbuy-price"></p>
+            <button class="view-button" onclick="window.open('https://www.bestbuy.com')">View</button>
           </div>
         </section>
       </main>
@@ -183,13 +168,17 @@
   <section class="footer">
     <div class="box-container">
       <div class="box">
-          <h3>branches</h3>
-          <a href="https://www.google.com/maps/d/viewer?mid=1jjdOnB91E1dK8dHGVI3h8cHWE40&hl=en_US&ll=13.072006049550708%2C77.63024850000004&z=11">bangalore </a>
-          <a href="https://www.google.com/maps/d/viewer?mid=1EzgROmKbC6QJLitgj_kJY9JyPsc&hl=en_US&ll=17.409152968829808%2C78.39616849999999&z=11">hyderabad </a>
-          <a href="https://www.google.com/mymaps/viewer?mid=1Q_XUP80EyawBs4eY4gQk0FEp3BQ&hl=en_US">delhi </a>
-          <a href="https://www.google.com/mymaps/viewer?mid=1VFzjeArnHwIghbeiCRbBMQTOquk&hl=en">kolkata </a>
-          <a href="https://www.google.com/mymaps/viewer?mid=1qJTcq5CaMdI4s4mNWp9Mi7QpJHQ&hl=en">chennai </a>
-        </div>
+        <h3>branches</h3>
+        <a
+          href="https://www.google.com/maps/d/viewer?mid=1jjdOnB91E1dK8dHGVI3h8cHWE40&hl=en_US&ll=13.072006049550708%2C77.63024850000004&z=11">bangalore
+        </a>
+        <a
+          href="https://www.google.com/maps/d/viewer?mid=1EzgROmKbC6QJLitgj_kJY9JyPsc&hl=en_US&ll=17.409152968829808%2C78.39616849999999&z=11">hyderabad
+        </a>
+        <a href="https://www.google.com/mymaps/viewer?mid=1Q_XUP80EyawBs4eY4gQk0FEp3BQ&hl=en_US">delhi </a>
+        <a href="https://www.google.com/mymaps/viewer?mid=1VFzjeArnHwIghbeiCRbBMQTOquk&hl=en">kolkata </a>
+        <a href="https://www.google.com/mymaps/viewer?mid=1qJTcq5CaMdI4s4mNWp9Mi7QpJHQ&hl=en">chennai </a>
+      </div>
 
       <div class="box">
         <h3>quick links</h3>
@@ -205,8 +194,8 @@
         <h3>contact info</h3>
         <a href="#"> <i class="fas fa-phone"></i> +91 983453223 </a>
         <a href="#"> <i class="fas fa-phone"></i> +91 800764532 </a>
-        <a href="mailto:nehamortha333@gmail.com"> <i class="fas fa-envelope"></i> nehamortha333@gmail.com </a>
-        <a href="mailto:sarahneha1115@gmail.com"> <i class="fas fa-envelope"></i> sarahneha1115@gmail.com</a>
+        <a href="mailto:suryanshsahay664@gmail.com"> <i class="fas fa-envelope"></i> suryanshsahay664@gmail.com </a>
+        <a href="mailto:202251137@iiitvadodara.ac.in"> <i class="fas fa-envelope"></i> 202251137@iiitvadodara.ac.in</a>
         <a href="https://www.google.com/mymaps/viewer?mid=1KkqI6ABqI-qHkLa44G1_DqJiZHc&hl=en_US"> <i
             class="fas fa-map-marker-alt"></i> Gandhinagar, india - 360054
         </a>

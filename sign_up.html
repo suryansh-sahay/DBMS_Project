@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Import any necessary CSS files -->
+    <style>
+        /* Additional high-level CSS styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .signup-container {
+            width: 400px;
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .signup-heading {
+            text-align: center;
+            color: rgba(209, 36, 160, 0.927);
+            margin-bottom: 30px;
+            font-size: 24px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: rgb(46, 26, 198);
+        }
+
+        .form-group input[type="text"],
+        .form-group input[type="email"],
+        .form-group input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+            transition: border-color 0.3s ease-in-out;
+        }
+
+        .form-group input[type="text"]:focus,
+        .form-group input[type="email"]:focus,
+        .form-group input[type="password"]:focus {
+            border-color: #007bff;
+            outline: none;
+        }
+
+        .signup-button {
+            width: 100%;
+            padding: 12px;
+            background-color: #007bff;
+            border: none;
+            color: rgb(86, 73, 73);
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+            margin-bottom: 10px;
+        }
+
+        .signup-button:hover {
+            background-color: #0056b3;
+        }
+
+        .login-link {
+            text-align: center;
+            color: #007bff;
+            text-decoration: none;
+            transition: color 0.3s ease-in-out;
+            cursor: pointer;
+        }
+
+        .login-link:hover {
+            color: #0056b3;
+        }
+
+        .error-message {
+            color: red;
+            font-size: 14px;
+            margin-top: 5px;
+            text-align: center;
+        }
+
+        .success-popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 255, 153, 0.45);
+            padding: 20px;
+            border-radius: 10px;
+            color: #fff;
+            font-weight: bold;
+            display: none;
+            z-index: 999;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="signup-container" id="sign-up">
+        <form action="#" class="signup-form">
+            <h2 class="signup-heading">Sign Up</h2>
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit" class="signup-button">Sign Up</button>
+            <p class="login-link" onclick="window.location.href='./login.html'">Login</p>
+        </form>
+        <p class="error-message"></p>
+    </div>
+
+    <div class="success-popup" id="success-popup">
+        sign-up successfully!
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const form = document.querySelector('.signup-form');
+
+            form.addEventListener('submit', function (event) {
+                event.preventDefault(); // Prevent default form submission
+
+                // Get form inputs
+                const username = document.getElementById('username').value;
+                const email = document.getElementById('email').value;
+                const password = document.getElementById('password').value;
+
+                // Check if any field is empty
+                if (username.trim() === '' || email.trim() === '' || password.trim() === '') {
+                    displayErrorMessage('All fields are required.');
+                } else {
+                    // If all fields are filled, display success message
+                    displaySuccessMessage();
+                }
+            });
+
+            function displayErrorMessage(message) {
+                // Create error message element
+                const errorMessage = document.querySelector('.error-message');
+                errorMessage.textContent = message;
+            }
+
+            function displaySuccessMessage() {
+                // Show success message popup
+                const successPopup = document.getElementById('success-popup');
+                successPopup.style.display = 'block';
+
+                // Hide success message after 3 seconds
+                setTimeout(function () {
+                    successPopup.style.display = 'none';
+                }, 3000);
+            }
+        });
+    </script>
+</body>
+
+</html>
